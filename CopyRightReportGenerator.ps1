@@ -21,8 +21,8 @@ $ErrorActionPreference = 'Stop'
 $targetpackages = Get-ChildItem $PATH -Include *.tar.gz -Recurse
 
 # Extracting...
-$targetpackages.FullName | 
-% {CMD.EXE /C "$PSScriptRoot\Tools\7Z\7za.exe x $_ -so | $PSScriptRoot\Tools\7Z\7za.exe x -aoa -si -ttar -o`"$(Split-Path $_ -parent)\package`""}
+#$targetpackages.FullName | 
+#% {CMD.EXE /C "$PSScriptRoot\Tools\7Z\7za.exe x $_ -so | $PSScriptRoot\Tools\7Z\7za.exe x -aoa -si -ttar -o`"$(Split-Path $_ -parent)\package`""}
 
 # Scanning through all .DLL,.EXE,.H and .LIB files for the *CopyRight* property and producing final report
 Write-Host "`nScanning through files...`n"
