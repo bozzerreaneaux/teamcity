@@ -86,7 +86,7 @@ FUNCTION Send-ToEmail([string]$emailTo, [string]$emailFrom, [string]$SMTPServer,
     write-host "Mail Sent"
 }
 
-if ((Invoke-Webrequest  -Method HEAD -Uri $uri -UseDefaultCredentials).statuscode -ne 200)
+IF ((Invoke-Webrequest  -Method HEAD -Uri $uri -UseDefaultCredentials).statuscode -ne 200)
 {
     Send-ToEmail  -emailTo $EmailTo -emailFrom $EmailFrom -SMTPServer $SMTP -uri $uri -id $id
 }
