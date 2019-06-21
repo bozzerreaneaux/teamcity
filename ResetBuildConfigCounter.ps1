@@ -39,7 +39,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-#Defining ResetBuildCounter function
+//Defining ResetBuildCounter function
 namespace WebReq
 {
     public static class WebRequest
