@@ -1,2 +1,2 @@
 # teamcity
-Mostly Teamcity support and automation scripts and stuff
+Mostly TeamCity support and automation scripts and stuff
